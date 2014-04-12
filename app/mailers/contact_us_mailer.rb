@@ -1,5 +1,5 @@
 class ContactUsMailer < ActionMailer::Base
-  default to: '"Home Grown" <TODO@gmail.com>'
+  default to: '"Home Grown" <homegrown.info.us@gmail.com>'
 
   def mail_homegrown(address, subject, details)
     mail(from: address,

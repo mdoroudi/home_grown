@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: '"Home Grown" <home.grown@gmail.com>'
+  default from: '"Home Grown" <homegrown.info.us@gmail.com>'
 
   def welcome_mail(address)
     @url = 'http://homegrown.us/' 
