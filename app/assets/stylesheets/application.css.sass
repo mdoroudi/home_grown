@@ -1,4 +1,6 @@
 @import "bootstrap"
+@import "bootstrap/theme"
+
 
 @mixin main_sections
   padding-top: 75px
@@ -15,6 +17,7 @@
 
 @mixin font_family
   font-family: 'Oxygen', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
   color: #454545
 
 @import url(http://fonts.googleapis.com/css?family=Oxygen)
@@ -25,34 +28,35 @@
 body
   @include font_family
 
-#dark-background
-  background-color: #868686
-  
-
 .container
-  width: 1238px
+  width: 100%
+  padding-left: 0px
   #outer_layout
     width: 100%
     float: left
     #wrapper
-      width: 1238px
+      width: 100%
       margin: 0 auto
       #inner_wrapper
-        width: 1238px
+        width: 100%
         float: left
         background: white
         box-shadow: 0px 0px 50px rgba(0,0,0,0.5)
         .navbar
-          border-bottom: 1px solid #c8c8c8
-          box-shadow: 0px 0px 5px rgba(0,0,0,0.25)
           margin-bottom: 0px
-          position: fixed
           top: 0
-          width: 1238px
-          .navbar-inner
-            @include border-rad(0px)
+          width: 100%
+          padding-top: 10px
+          padding-bottom: 10px
+          .container
+            position: relative
+            min-width: 320px
+            max-width: 1070px
+            margin: 0 auto
+            background-color: white
             border: 0px
             #logo
+              padding-left: 10px
               img
                 float: left
                 width: 233px
@@ -104,10 +108,11 @@ input[type="submit"]
   background: blue
     
 .hero-unit
-  background-image: url("#{bleeding_hearts_background_small}.jpg")
+  color: white
+  background-image: url("#{home_grown1}.jpg")
   background-repeat: no-repeat
-  height: 500px
-  padding-top: 100px
+  height: 900px
+  background-size: cover
   @include border-rad(0px)
   label
     float: left
@@ -126,6 +131,21 @@ input[type="submit"]
     height: 39px
     width: 261px
     margin-right: 10px 
+  .row
+    text-align: center
+    padding-top: 10%
+    h1
+      font-size: 48px
+      font-weight: 500
+      letter-spacing: 1px
+    .short-hr
+      width: 114px
+      margin: 30px auto
+      border-top: 2px solid #fff
+    .sub-head
+      margin-bottom: 40px
+      font-size: 30px
+      font-weight: 300
 
 form
   .btn-large

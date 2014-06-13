@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Outsidekick::Application.config.secret_key_base = '3d3f289dceacf3438bea33dac412d2b186183f2708559fc4094ed89e77e688df5c751adfbc2fe92e6d2aa7a1b6f8b962d7b29d245e0f04ae6c0e8a271e32efa8'
+HomeGrown::Application.config.secret_key_base = '3d3f289dceacf3438bea33dac412d2b186183f2708559fc4094ed89e77e688df5c751adfbc2fe92e6d2aa7a1b6f8b962d7b29d245e0f04ae6c0e8a271e32efa8'
