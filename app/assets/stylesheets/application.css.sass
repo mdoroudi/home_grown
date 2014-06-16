@@ -27,42 +27,35 @@
 
 body
   @include font_family
+  overflow-x: hidden
 
-.container
+.navbar
+  margin-bottom: 0px
+  top: 0
   width: 100%
-  padding-left: 0px
-  #outer_layout
-    width: 100%
-    float: left
-    #wrapper
-      width: 100%
-      margin: 0 auto
-      #inner_wrapper
-        width: 100%
+  padding-top: 10px
+  padding-bottom: 10px
+  .container
+    position: relative
+    min-width: 320px
+    max-width: 1070px
+    margin: 0 auto
+    background-color: white
+    border: 0px
+    #logo
+      padding-left: 10px
+      img
         float: left
-        background: white
-        box-shadow: 0px 0px 50px rgba(0,0,0,0.5)
-        .navbar
-          margin-bottom: 0px
-          top: 0
-          width: 100%
-          padding-top: 10px
-          padding-bottom: 10px
-          .container
-            position: relative
-            min-width: 320px
-            max-width: 1070px
-            margin: 0 auto
-            background-color: white
-            border: 0px
-            #logo
-              padding-left: 10px
-              img
-                float: left
-                width: 233px
-            .nav
-              float: right
-              padding-top: 5px
+        width: 233px
+    .nav
+      float: right
+      padding-top: 5px
+      li
+        a
+          color: gray
+        a:hover
+          background-color: white
+          color: rgb(25, 175, 25)
 .welcome-box
   padding-top: 75px
   width: 350px
