@@ -55,7 +55,7 @@ body
           color: gray
         a:hover
           background-color: white
-          color: rgb(25, 175, 25)
+          color: #00BB00
 .welcome-box
   padding-top: 75px
   width: 350px
@@ -97,9 +97,6 @@ body
   .photo
     @include main_sections
 
-input[type="submit"]
-  background: blue
-    
 .hero-unit
   color: white
   background-image: url("#{home_grown1}.jpg")
@@ -126,7 +123,6 @@ input[type="submit"]
     margin-right: 10px 
   .row
     text-align: center
-    padding-top: 10%
     h1
       font-size: 48px
       font-weight: 500
@@ -139,7 +135,21 @@ input[type="submit"]
       margin-bottom: 40px
       font-size: 30px
       font-weight: 300
-
+    .btn-primary
+      font-size: 30px
+      padding: 8px 12px 10px 12px
+      border-width: 1px
+      text-transform: none
+      border-radius: 2px
+      letter-spacing: .02em
+      background-image: none
+      background-color: #20AA20
+      hover
+        background-color: white
+    .btn-success:hover
+      background-color: #1A961A
+    .btn-success:focus
+      background-color: #1A961A
 form
   .btn-large
     padding: 9px
@@ -159,11 +169,13 @@ form
   padding-top: 80px
   padding-bottom: 100px
 #about-page-wrapper 
-  @include small_pages
-  h4.you
-    padding-top: 30px
+  background-color: #e5ece7
+  .inner-text
+    @include small_pages
 #contact-us-page-wrapper
-  @include small_pages
+  background-color: #e5ece7
+  .inner-text
+    @include small_pages
   #contact_email
     height: 30px  
     width: 300px
@@ -171,6 +183,7 @@ form
   #contact_detail
     width: 500px
     font-size: 18px
+  .btn
 #privacy-policy-page-wrapper
   @include small_pages
 
