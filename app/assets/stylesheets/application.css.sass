@@ -17,7 +17,7 @@
 
 @mixin font_family
   font-family: 'Oxygen', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
   color: #454545
 
 @import url(http://fonts.googleapis.com/css?family=Oxygen)
@@ -56,6 +56,43 @@ body
         a:hover
           background-color: white
           color: #00BB00
+
+#inner_wrapper
+  .how-to
+    padding:
+      top: 60px
+      bottom: 60px
+    .home-grown-benefit
+      margin-top: 30px
+      margin-bottom: 30px
+      .glyphicon
+        font-size: 3em
+        color: #dddddd
+        position: absolute
+      .large-tree
+        font-size: 2em
+        padding-left: 33px
+        padding-top: 17px
+      .small-tree
+        font-size: 1em
+        padding-top: 30px
+      .left
+        padding-left: 27px
+      .small-user
+        font-size: 2em
+        padding-top: 15px
+      .user-left
+        padding-top: 15px
+      .user-center
+        padding-left: 11px
+      .user-right
+        padding-top: 15px
+        padding-left: 36px
+      p
+        margin-left: 78px
+        padding-right: 24px
+        margin-bottom: 0px
+
 .welcome-box
   padding-top: 75px
   width: 350px
@@ -150,6 +187,23 @@ body
       background-color: #1A961A
     .btn-success:focus
       background-color: #1A961A
+.footer
+  border-top: solid 1px #eaeaea
+  color: #a7a7a8
+  font-size: 12px
+  margin-top: 60px
+  padding-top: 150.93333333333334px
+  padding-bottom: 30px
+  padding-top: 30px
+  background-color: #f5f5f5
+  ul
+    margin: 20px auto 50px auto
+    font-size: 13px
+    display: inline
+    li
+      display: inline !important
+      padding: 10px
+
 form
   .btn-large
     padding: 9px
@@ -188,5 +242,4 @@ form
   @include small_pages
 
 .page-body
-  height: 100%
-
+  height: 700px
