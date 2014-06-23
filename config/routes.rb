@@ -1,5 +1,6 @@
 HomeGrown::Application.routes.draw do
 
+  devise_for :users
   resources :early_users
 
   root 'home#index'

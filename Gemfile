@@ -28,6 +28,9 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 gem 'thin'
+gem 'devise'
+gem 'devise_invitable'
+gem 'omniauth'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
@@ -44,7 +47,7 @@ end
 # gem 'unicorn'
 
 # Use Capistrano for deployment
- gem 'capistrano', group: :development
+gem 'capistrano', group: :development
 
 group :development, :test do
   gem 'rspec-rails'
