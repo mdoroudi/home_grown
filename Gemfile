@@ -11,6 +11,7 @@ gem 'pg'
 gem 'sass-rails'
 gem 'haml'
 gem 'haml-rails'
+gem 'html2haml'
 gem 'bootstrap-sass'
 
 # Use Uglifier as compressor for JavaScript assets
