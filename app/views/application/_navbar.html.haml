@@ -4,7 +4,7 @@
       #logo
         =link_to(image_tag("home_grown_logo_thin_sp.png"), "/")
       %ul.nav.navbar-nav
-        %li= link_to "Sign Up", "/users/sign_up"
-        %li= link_to "Log In", "/users/sign_in"
-        %li= link_to "Contact", "/contact_us"
-        %li= link_to "About", "/about" 
+        -if user_signed_in?  
+          = render partial: 'navbar_logged_in_links'
+        -else
+          = render partial: 'navbar_logged_out_links'

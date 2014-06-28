@@ -6,7 +6,7 @@
       %p
         = f.label :email
         %p
-        = f.email_field :email, autofocus: true
+        = f.email_field :email, autofocus: true, type: "email"
       %p
         = f.label :password
         %p
@@ -15,6 +15,7 @@
         = f.label :password_confirmation
         %p
         = f.password_field :password_confirmation, autocomplete: "off"
-      .btn.btn-success= f.submit "Sign up"
+      .btn.btn-success
+        = f.submit "Sign up", type: "submit"
 
     = render "devise/shared/links"
