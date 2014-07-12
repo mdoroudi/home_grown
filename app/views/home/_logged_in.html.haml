@@ -1,9 +1,12 @@
 .page-body#user-profile
   .container
     %h1 
-      = "Welcome #{current_user.email}"
+      = "Welcome!"
     %br
-    %p edit your profile
+    %p Fill in your profile to find plants and help others to find plants!
+    %p continue
+    %p
+      = "email: #{current_user.email}"
     %p list your plants
     %p put a wish list up
     %p see friends
